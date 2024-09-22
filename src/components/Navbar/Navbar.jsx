@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import './Navbar.css';
-import Fire from '../../assets/fire.png';
-import Star from '../../assets/star.png';
-import Party from '../../assets/partying-face.png';
+import "./Navbar.css";
+import DarkMode from "../DarkMode/DarkMode";
+import Fire from "../../assets/fire.png";
+import Star from "../../assets/star.png";
+import Party from "../../assets/partying-face.png";
 
 const Navbar = () => {
   return (
@@ -11,15 +12,16 @@ const Navbar = () => {
       <h1>Movie Explorer</h1>
 
       <div className='navbar_links'>
-        <a href='fb.com'>
+        <DarkMode />
+        <a href='#popular'>
           Popular
           <img src={Fire} alt='Fire Emoji' className='navbar_emoji' />
         </a>
-        <a href='/'>
+        <a href='#top_rated'>
           Top Rated
           <img src={Star} alt='Star Emoji' className='navbar_emoji' />
         </a>
-        <a href='/'>
+        <a href='#upcoming'>
           New Movies
           <img
             src={Party}
